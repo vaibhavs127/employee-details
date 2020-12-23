@@ -14,18 +14,19 @@
   <body>
     <div class="container">
       <div style="text-align: center">
-        <h1>Welcome employee!</h1>
+        <h1>Welcome Employee!</h1>
         <p>
-          <button (click)="logout()">Logout</button>
+          <button mat-raised-button color="primary" (click)="logout()">
+            Logout
+          </button>
         </p>
 
         <table class="table">
           <thead>
             <tr>
-              <th>id</th>
+              <th>No.</th>
               <th>Name</th>
-
-              <th>Details</th>
+              <th>View Details</th>
             </tr>
           </thead>
           <tbody>
@@ -34,7 +35,11 @@
               <td>{{ employee.name }}</td>
 
               <td>
-                <button [routerLink]="['/viewdetails/' + employee.id]">
+                <button
+                  mat-raised-button
+                  color="primary"
+                  [routerLink]="['/viewdetails/' + employee.id]"
+                >
                   View
                 </button>
               </td>

@@ -53,6 +53,7 @@
             <mat-error *ngIf="formControls.password.errors">
               Minimum Password lenght must be 6
             </mat-error>
+
             <mat-error *ngIf="formControls.password.errors.required">
               Password is required
             </mat-error>
@@ -60,9 +61,7 @@
         </mat-form-field>
       </div>
 
-     
-        <button mat-flat-button color="primary">Login</button>
-      
+      <button mat-flat-button color="primary">Login</button>
     </form>
   </mat-card-content>
 </mat-card>

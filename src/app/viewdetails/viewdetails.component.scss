@@ -6,3 +6,26 @@
 .example-header-image {
   background-size: cover;
 }
+
+mat-card-title {
+  border: 1px solid black;
+  border-radius: 20px;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+  &:hover {
+    background: black;
+    color: white;
+  }
+}
+
+.example-card {
+  background: rgb(236, 236, 240);
+  border-color: transparent;
+  max-width: 30%;
+}
+mat-card-subtitle {
+  text-decoration: underline;
+  margin-left: 10px;
+  font-size: 15px;
+}
