@@ -13,6 +13,7 @@
 
   <mat-card-content>
     <p>Email: {{ item.email }}</p>
+    <p>{{ item.name }} {{ age | date }} years old</p>
   </mat-card-content>
   <mat-card-actions>
     <button mat-raised-button color="primary" [routerLink]="'/employee/'">

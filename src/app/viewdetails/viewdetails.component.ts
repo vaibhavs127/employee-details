@@ -8,9 +8,11 @@ import { ActivatedRoute, Router } from '@angular/router';
   selector: 'app-viewdetails',
   templateUrl: './viewdetails.component.html',
   styleUrls: ['./viewdetails.component.scss'],
-  providers: [],
+  template: `<p>name {{ age | date }}</p>`,
 })
 export class ViewdetailsComponent implements OnInit {
+  age = new Date(1988, 3, 15);
+
   constructor(
     private data: AuthService,
     private actroute: ActivatedRoute,
