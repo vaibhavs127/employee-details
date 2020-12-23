@@ -4,3 +4,15 @@ button {
   color: #fff;
   cursor: pointer;
 }
+
+table {
+  width: 100%;
+}
+
+.abc:nth-child(even) {
+  background-color: white;
+}
+
+.abc:nth-child(odd) {
+  background-color: silver;
+}

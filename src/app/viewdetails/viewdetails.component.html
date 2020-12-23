@@ -1,0 +1,22 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image">
+      <img
+        mat-card-image
+        src="https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png"
+        alt="Photo of a Shiba Inu"
+      />
+    </div>
+    <mat-card-title>Name: {{ item.name }}</mat-card-title>
+    <mat-card-subtitle>Username: {{ item.username }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p>Email: {{ item.email }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" [routerLink]="'/employee/'">
+      Back
+    </button>
+  </mat-card-actions>
+</mat-card>
