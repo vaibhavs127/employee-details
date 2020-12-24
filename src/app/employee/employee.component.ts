@@ -17,7 +17,7 @@ export class EmployeeComponent implements OnInit {
     private router: Router,
     private http: HttpClient
   ) {}
-
+ displayedU: string[] = ['id', 'name', 'view']
   ngOnInit() {
     let res = this.http.get('https://jsonplaceholder.typicode.com/users');
     res.subscribe((data) => {
